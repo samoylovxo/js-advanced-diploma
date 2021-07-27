@@ -6,9 +6,9 @@ export default class Character {
     this.health = 50;
     this.type = type;
 
-    // if (new.target) {
-    //   throw new Error('Нельзя создавать больше двух экземпляров');
-    // }
+    if (new.target === Character) {
+      throw new Error('Нельзя создавать больше двух экземпляров');
+    }
     // TODO: throw error if user use "new Character()
   }
 }

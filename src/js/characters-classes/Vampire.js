@@ -6,5 +6,7 @@ export default class Undead extends Character {
     super(level, 'vampire');
     this.attack = 25;
     this.defence = 25;
+    this.moveDistance = 2;
+    this.attackDistance = 2;
   }
 }
