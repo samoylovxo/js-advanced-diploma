@@ -7,7 +7,7 @@ export default class Character {
     this.type = type;
 
     if (new.target === Character) {
-      throw new Error('Нельзя создавать больше двух экземпляров');
+      throw new Error('Нельзя создавать больше одного экземпляров');
     }
     // TODO: throw error if user use "new Character()
   }
